@@ -1,0 +1,28 @@
+{
+    "name": "popov/fast-order",
+    "description": "test plugin for fast order in Shopware",
+    "version": "v0.0.1",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Popov A.V"
+        }
+    ],
+    "require": {
+        "shopware/core": "6.*",
+        "shopware/storefront": "6.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Popov\\FastOrder\\FastOrder",
+        "label": {
+            "de-DE": "FastOrder Plugin",
+            "en-GB": "FastOrder plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Popov\\FastOrder\\": "src/"
+        }
+    }
+}

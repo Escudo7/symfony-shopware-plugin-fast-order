@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+
+{% block layout_main_navigation_menu_items %}
+    {{ parent() }}
+
+    <a class="nav-link main-navigation-link{% if categorId is same as(page.header.navigation.active.id) %} active{% endif %}"
+       href="{{ path('fast-order.show') }}"
+       itemprop="url"
+       title="fast_order">
+        <div class="main-navigation-link-text">
+            <span itemprop="name">Fast order</span>
+        </div>
+    </a>
+{% endblock %}
